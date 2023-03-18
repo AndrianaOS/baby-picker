@@ -14,14 +14,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  background-image: linear-gradient(cyan, white, pink);
 }
 
 .App-link {
@@ -35,4 +36,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* .childNames {
+  border: 2px solid aquamarine;
+  margin: 1em;
+  width: 7em;
+  height: 1em;
+  padding: 1em;
+  border-radius: 25px;
+} */
+
+.nameContainer {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-evenly;
+}
+
+.searchInput {
+  margin: 2em;
+  font-size: 1.5em;
+  border-radius: 30px;
+  padding: 0.5em;
+  text-align: center;
+  border: 2px blue solid;
+}
+
+.boyNames {
+  background-color: #61dafb;
+  margin: 1em;
+  width: 7em;
+  height: 1em;
+  padding: 1em;
+  border-radius: 25px;
+  border: 2px solid #61dafb;
+}
+
+.girlNames {
+  background-color: pink;
+  margin: 1em;
+  width: 7em;
+  height: 1em;
+  padding: 1em;
+  border-radius: 25px;
+  border: 2px solid pink;
 }

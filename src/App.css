@@ -38,6 +38,52 @@
   }
 }
 
+.submit-form {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 10em 10em;
+  grid-template-areas:
+    "gender name"
+    "gender submit";
+  margin: 1em auto 0.5em auto;
+  column-gap: 0.5em;
+}
+
+#gender {
+  grid-area: gender;
+  background: aliceblue;
+  border-color: pink;
+}
+
+#name-input {
+  grid-area: name;
+  font-size: 1em;
+  width: 9.7em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#babyname {
+  background: aliceblue;
+  border-color: pink;
+}
+
+#submit-btn {
+  grid-area: submit;
+  width: 9.2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.6em;
+  font-size: 1em;
+  background: aliceblue;
+  border-color: pink;
+}
+
+.gender-selection {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* .childNames {
   border: 2px solid aquamarine;
   margin: 1em;
@@ -48,9 +94,18 @@
 } */
 
 .nameContainer {
+  /* display: grid;
+  /* grid-template-columns: repeat(5, auto); */
+  /* grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+  justify-content: space-evenly; */
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  /* grid-template-columns: repeat(5, auto); */
+  grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+  grid-column-gap: 1em;
   justify-content: space-evenly;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .searchInput {
@@ -65,7 +120,7 @@
 .boyNames {
   background-color: #61dafb;
   margin: 1em;
-  width: 7em;
+  width: 5em;
   height: 1em;
   padding: 1em;
   border-radius: 25px;
@@ -75,7 +130,7 @@
 .girlNames {
   background-color: pink;
   margin: 1em;
-  width: 7em;
+  width: 5em;
   height: 1em;
   padding: 1em;
   border-radius: 25px;

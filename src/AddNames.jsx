@@ -24,17 +24,9 @@ function AddNames({ setNames }) {
     setFormData(initialState);
   }
 
-  //   function handleChange(event) {
-  //     // event.preventDefault();
-  //     setFormData({ ...formData, [event.target.name]: event.target.value });
-  //   }
-
   function handleChange(event) {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
+    event.preventDefault();
+    setFormData({ ...formData, [event.target.name]: event.target.value });
   }
 
   return (
@@ -42,17 +34,14 @@ function AddNames({ setNames }) {
       <form className="submit-form" method="post" onSubmit={handleSubmit}>
         <fieldset id="gender">
           <legend>Select a gender</legend>
-          <aside
-            className="gender-selection"
-            // className={value === "male" ? "boyNames" : "girlNames"}
-          >
+          <aside className="gender-selection">
             <label htmlFor="male">Male</label>
             <input
               type="radio"
               id="male"
               name="sex"
-              value="male"
-              checked={formData.sex === "male"}
+              value="m"
+              checked={formData.sex === "m"}
               onChange={handleChange}
             />
           </aside>
@@ -62,8 +51,8 @@ function AddNames({ setNames }) {
               type="radio"
               id="female"
               name="sex"
-              value="female"
-              checked={formData.sex === "female"}
+              value="f"
+              checked={formData.sex === "f"}
               onChange={handleChange}
             />
           </aside>

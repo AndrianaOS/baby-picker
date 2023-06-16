@@ -1,11 +1,11 @@
 import React from "react";
 // import BabyNamesData from "./directory/babyNamesData.json";
 
-function BabyNames(info) {
-  //   console.log(info);
+function BabyNames(props) {
+  //   console.log(props);
   return (
     <section className="nameContainer">
-      {info.names
+      {props.names
         .sort((a, b) => (a.name > b.name ? 1 : -1))
         .map((eachName) => (
           <p

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AddNames({ setNames }) {
+function AddNames({ setNames, getAllNames }) {
   const initialState = {
     name: "",
     sex: "",
@@ -8,20 +8,29 @@ function AddNames({ setNames }) {
 
   const [formData, setFormData] = useState(initialState);
 
-  //   const [handleError, setHandleError] = useState(null);
+  const [handleError, setHandleError] = useState(null);
 
   function handleSubmit(event) {
     event.preventDefault();
-
-    let randomID = Math.floor(100000 + Math.random() * 900000);
-
-    const newName = {
-      id: randomID,
-      name: formData.name,
-      sex: formData.sex,
-    };
-    setNames((prevNames) => [...prevNames, newName]);
-    setFormData(initialState);
+    fetch("http://localhost:4000/name", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        sex: formData.sex,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Print this", data);
+        setNames((prevNames) => [...prevNames, data]);
+        getAllNames();
+        setFormData(initialState);
+        setHandleError(data.error);
+      })
+      .catch((error) => console.log(error));
   }
 
   function handleChange(event) {

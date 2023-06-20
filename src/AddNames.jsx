@@ -8,7 +8,7 @@ function AddNames({ setNames, getAllNames }) {
 
   const [formData, setFormData] = useState(initialState);
 
-  const [handleError, setHandleError] = useState(null);
+  // const [handleError, setHandleError] = useState(null);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -28,7 +28,7 @@ function AddNames({ setNames, getAllNames }) {
         setNames((prevNames) => [...prevNames, data]);
         getAllNames();
         setFormData(initialState);
-        setHandleError(data.error);
+        // setHandleError(data.error);
       })
       .catch((error) => console.log(error));
   }

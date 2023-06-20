@@ -2,16 +2,16 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   /* background-color: #282c34; */
@@ -22,61 +22,66 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  background-image: linear-gradient(cyan, white, pink);
+  background-image: linear-gradient(72deg, #00ffff, #ffffff, #ffc0cb);
+  height: 43em;
+  background-attachment: fixed;
+  padding: 20px;
+  row-gap: 10px;
+  /* font-family: "Caveat", cursive; */
+
+  font-family: "Kalam", cursive;
+}
+
+#stork-baby {
+  width: 15em;
+  --animate-duration: 3s;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-body {
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+  padding: 20px;
 }
 
 .submit-form {
-  width: 90%;
   display: grid;
   grid-template-columns: 10em 10em;
   grid-template-areas:
     "gender name"
     "gender submit";
-  margin: 1em auto 0.5em auto;
   column-gap: 0.5em;
+  padding: 5px;
 }
 
 #gender {
   grid-area: gender;
-  background: aliceblue;
-  border-color: pink;
+  background: #f0f8ff;
+  border-color: #ffc0cb;
 }
 
 #name-input {
   grid-area: name;
   font-size: 1em;
   width: 9.7em;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #babyname {
-  background: aliceblue;
-  border-color: pink;
+  background: #f0f8ff;
+  border-color: #ffc0cb;
+  padding: 4px;
 }
 
 #submit-btn {
   grid-area: submit;
-  width: 9.2em;
-  margin-left: auto;
-  margin-right: auto;
+  width: 9.5em;
   margin-top: 0.6em;
   font-size: 1em;
-  background: aliceblue;
-  border-color: pink;
+  background: #f0f8ff;
+  border-color: #ffc0cb;
 }
 
 .gender-selection {
@@ -109,8 +114,8 @@
 }
 
 .searchInput {
-  margin: 2em;
-  font-size: 1.5em;
+  margin: 1em;
+  font-size: 1.2em;
   border-radius: 30px;
   padding: 0.5em;
   text-align: center;

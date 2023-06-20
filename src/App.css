@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-header {
   /* background-color: #282c34; */
   min-height: 10vh;
@@ -57,10 +46,24 @@
   padding: 5px;
 }
 
+#male {
+  accent-color: #1e90ff;
+}
+
+#female {
+  accent-color: #ff00ff;
+}
+
+#neutral {
+  accent-color: #08a108;
+}
+
 #gender {
   grid-area: gender;
   background: #f0f8ff;
-  border-color: #ffc0cb;
+  border-style: solid;
+  border-width: 4px;
+  border-image: linear-gradient(45deg, #61dafb, #ffc0cb, #8dfb61) 1;
 }
 
 #name-input {
@@ -71,8 +74,10 @@
 
 #babyname {
   background: #f0f8ff;
-  border-color: #ffc0cb;
   padding: 4px;
+  border-style: solid;
+  border-width: 4px;
+  border-image: linear-gradient(45deg, #61dafb, #ffc0cb, #8dfb61) 1;
 }
 
 #submit-btn {
@@ -81,7 +86,9 @@
   margin-top: 0.6em;
   font-size: 1em;
   background: #f0f8ff;
-  border-color: #ffc0cb;
+  border-style: solid;
+  border-width: 4px;
+  border-image: linear-gradient(45deg, #61dafb, #ffc0cb, #8dfb61) 1;
 }
 
 .gender-selection {
@@ -89,22 +96,8 @@
   justify-content: space-between;
 }
 
-/* .childNames {
-  border: 2px solid aquamarine;
-  margin: 1em;
-  width: 7em;
-  height: 1em;
-  padding: 1em;
-  border-radius: 25px;
-} */
-
 .nameContainer {
-  /* display: grid;
-  /* grid-template-columns: repeat(5, auto); */
-  /* grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
-  justify-content: space-evenly; */
   display: grid;
-  /* grid-template-columns: repeat(5, auto); */
   grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
   grid-column-gap: 1em;
   justify-content: space-evenly;
@@ -116,10 +109,11 @@
 .searchInput {
   margin: 1em;
   font-size: 1.2em;
-  border-radius: 30px;
   padding: 0.5em;
   text-align: center;
-  border: 2px blue solid;
+  border-style: solid;
+  border-width: 4px;
+  border-image: linear-gradient(45deg, #61dafb, #ffc0cb, #8dfb61) 1;
 }
 
 .boyNames {
@@ -133,11 +127,21 @@
 }
 
 .girlNames {
-  background-color: pink;
+  background-color: #ffc0cb;
   margin: 1em;
   width: 5em;
   height: 1em;
   padding: 1em;
   border-radius: 25px;
-  border: 2px solid pink;
+  border: 2px solid #ffc0cb;
+}
+
+.neutralNames {
+  background-color: #8dfb61;
+  margin: 1em;
+  width: 5em;
+  height: 1em;
+  padding: 1em;
+  border-radius: 25px;
+  border: 2px solid #8dfb61;
 }

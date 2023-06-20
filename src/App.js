@@ -38,9 +38,11 @@ function App() {
   return (
     <div className="App">
       <Heading />
-      <AddNames setNames={setAllNames} getAllNames={getAllNames} />
-      <SearchInput search={Search} />
-      <BabyNames names={searchResults} />
+      <div className="App-body">
+        <AddNames setNames={setAllNames} getAllNames={getAllNames} />
+        <SearchInput search={Search} />
+        <BabyNames names={searchResults} />
+      </div>
     </div>
   );
 }

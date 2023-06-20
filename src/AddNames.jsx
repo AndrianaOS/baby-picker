@@ -42,7 +42,7 @@ function AddNames({ setNames, getAllNames }) {
     <section>
       <form className="submit-form" method="post" onSubmit={handleSubmit}>
         <fieldset id="gender">
-          <legend>Select a gender</legend>
+          <legend>Select a sex</legend>
           <aside className="gender-selection">
             <label htmlFor="male">Male</label>
             <input
@@ -62,6 +62,17 @@ function AddNames({ setNames, getAllNames }) {
               name="sex"
               value="f"
               checked={formData.sex === "f"}
+              onChange={handleChange}
+            />
+          </aside>
+          <aside className="gender-selection">
+            <label htmlFor="neutral">Unisex</label>
+            <input
+              type="radio"
+              id="neutral"
+              name="sex"
+              value="n"
+              checked={formData.sex === "n"}
               onChange={handleChange}
             />
           </aside>

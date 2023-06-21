@@ -12,9 +12,15 @@ function Heading() {
         animate__slow
         animate__infinite"
       />
-      <h1>WELCOME TO ANDRIANA'S BABY NAME NEST</h1>
-      <h2>Discover the Perfect Name for Your Bundle of Joy</h2>
-      <h3>Scroll down to see names and submit a name below</h3>
+      <h1 className="header-info" id="page-name">
+        WELCOME TO ANDRIANA'S BABY NAME NEST
+      </h1>
+      <h2 className="header-info" id="page-info">
+        Discover the Perfect Name for Your Bundle of Joy
+      </h2>
+      <h3 className="header-info" id="page-instructions">
+        Scroll down to see names and submit a name below
+      </h3>
     </header>
   );
 }

@@ -3,12 +3,10 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
   background-image: linear-gradient(72deg, #00ffff, #ffffff, #ffc0cb);
@@ -16,14 +14,16 @@
   background-attachment: fixed;
   padding: 20px;
   row-gap: 10px;
-  /* font-family: "Caveat", cursive; */
-
   font-family: "Kalam", cursive;
 }
 
 #stork-baby {
   width: 15em;
   --animate-duration: 3s;
+}
+
+.header-info {
+  margin-bottom: 0;
 }
 
 .App-link {
@@ -58,12 +58,15 @@
   accent-color: #08a108;
 }
 
-#gender {
-  grid-area: gender;
+.border-box {
   background: #f0f8ff;
   border-style: solid;
   border-width: 4px;
   border-image: linear-gradient(45deg, #61dafb, #ffc0cb, #8dfb61) 1;
+}
+
+#gender {
+  grid-area: gender;
 }
 
 #name-input {
@@ -73,11 +76,7 @@
 }
 
 #babyname {
-  background: #f0f8ff;
   padding: 4px;
-  border-style: solid;
-  border-width: 4px;
-  border-image: linear-gradient(45deg, #61dafb, #ffc0cb, #8dfb61) 1;
 }
 
 #submit-btn {
@@ -85,10 +84,6 @@
   width: 9.5em;
   margin-top: 0.6em;
   font-size: 1em;
-  background: #f0f8ff;
-  border-style: solid;
-  border-width: 4px;
-  border-image: linear-gradient(45deg, #61dafb, #ffc0cb, #8dfb61) 1;
 }
 
 .gender-selection {
@@ -111,9 +106,6 @@
   font-size: 1.2em;
   padding: 0.5em;
   text-align: center;
-  border-style: solid;
-  border-width: 4px;
-  border-image: linear-gradient(45deg, #61dafb, #ffc0cb, #8dfb61) 1;
 }
 
 .boyNames {
@@ -144,4 +136,115 @@
   padding: 1em;
   border-radius: 25px;
   border: 2px solid #8dfb61;
+}
+
+@media screen and (min-width: 550px) {
+  .submit-form {
+    grid-template-areas: "gender name submit";
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+
+  #babyname {
+    padding: 7px 0;
+    font-size: 1.2em;
+    width: 7.6em;
+  }
+
+  #name-input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #submit-btn {
+    height: 43px;
+    margin-top: 26px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .App-header {
+    height: 31.4em;
+  }
+
+  #stork-baby {
+    width: 11em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #stork-baby {
+    grid-area: picture;
+    margin-left: 25px;
+  }
+
+  #page-name {
+    grid-area: heading;
+  }
+
+  #page-info {
+    grid-area: info;
+  }
+
+  #page-instructions {
+    grid-area: instruction;
+  }
+
+  .App-header {
+    height: 30.2em;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+      "heading heading"
+      "info picture"
+      "instruction instruction";
+    column-gap: 0.5em;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #submit-btn {
+    height: 2.2em;
+    margin-top: 1.3em;
+  }
+
+  .border-box {
+    border-width: 8px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #stork-baby {
+    width: 13em;
+  }
+
+  .App-header {
+    height: 35.2em;
+    padding: 25px;
+  }
+
+  .App-body {
+    font-size: 2em;
+  }
+
+  .boyNames,
+  .girlNames,
+  .neutralNames {
+    border-radius: 55px;
+  }
+
+  .border-box {
+    border-width: 10px;
+  }
+
+  #submit-btn {
+    height: 76px;
+    margin-top: 40px;
+  }
+
+  input[type="radio"] {
+    width: 30px;
+  }
 }

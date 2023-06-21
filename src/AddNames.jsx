@@ -41,7 +41,7 @@ function AddNames({ setNames, getAllNames }) {
   return (
     <section>
       <form className="submit-form" method="post" onSubmit={handleSubmit}>
-        <fieldset id="gender">
+        <fieldset id="gender" className="border-box">
           <legend>Select a sex</legend>
           <aside className="gender-selection">
             <label htmlFor="male">Male</label>
@@ -85,9 +85,10 @@ function AddNames({ setNames, getAllNames }) {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            className="border-box"
           />
         </aside>
-        <button type="submit" id="submit-btn">
+        <button type="submit" id="submit-btn" className="border-box">
           Submit name
         </button>
       </form>

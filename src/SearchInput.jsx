@@ -10,7 +10,7 @@ function SearchInput(props) {
   return (
     <input
       placeholder="Type a name"
-      className="searchInput"
+      className="searchInput border-box"
       value={searchInput}
       onChange={handleSearchInput}
     />

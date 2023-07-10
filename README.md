@@ -1,3 +1,32 @@
+
+# Andriana’s Baby Name Nest
+
+This is a website that has suggestions of names for babies. It is written using React for the frontend, Node and Express.JS for the backend and PostgreSQL for the database. This app was created to help people have some idea of names for babies based on their preference.
+
+## ⭐️ Features
+
+- Shows a wide range of names.
+- User can also add names to the list by choosing the sex and typing the name in the text box provided.
+- Users can search names from the list.
+- Names show in 3 different colours, pink for female names, blue for male names and green for unisex names.
+
+
+## 🚀 Deployed Website
+https://baby-names-site.netlify.app/
+
+
+## 💻 Screenshot
+
+![image](https://drive.google.com/uc?export=view&id=16MC-IywwBX9BiHivwp9zPg-wsPOkB-1s)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome.
+![image](https://github.com/AndrianaOS/baby-picker/assets/113118206/8a86ac59-fe6f-44be-aaaa-32a58815bb74)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

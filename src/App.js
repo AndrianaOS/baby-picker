@@ -20,7 +20,7 @@ function App() {
   }
 
   function getAllNames() {
-    fetch("http://localhost:4000/names")
+    fetch("https://baby-nest-server.onrender.com/names")
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);

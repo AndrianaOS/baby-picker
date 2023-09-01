@@ -12,7 +12,7 @@ function AddNames({ setNames, getAllNames }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    fetch("http://localhost:4000/name", {
+    fetch("https://baby-nest-server.onrender.com/name", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

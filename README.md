@@ -17,14 +17,13 @@ https://baby-names-site.netlify.app/
 
 ## 💻 Screenshot
 
-![image](https://drive.google.com/uc?export=view&id=16MC-IywwBX9BiHivwp9zPg-wsPOkB-1s)
+<img src="https://drive.google.com/uc?export=view&id=16MC-IywwBX9BiHivwp9zPg-wsPOkB-1s" alt="Image of deployed website" />
 
 
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome.
-![image](https://github.com/AndrianaOS/baby-picker/assets/113118206/8a86ac59-fe6f-44be-aaaa-32a58815bb74)
 
 
 # Getting Started with Create React App
